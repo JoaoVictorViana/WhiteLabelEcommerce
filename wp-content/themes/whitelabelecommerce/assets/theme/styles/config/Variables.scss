@@ -1,0 +1,86 @@
+// colors
+:root{
+  --color-black: #000000;
+  --color-white: #fafafa;
+  --color-white-hover: rgba(255,255,255, 0.1);
+  --color-white-navbar: #ffffff;
+  --color-blue: #08517c;
+  --color-blue-i: #08517c;
+  --color-blue-dark: #0e395a;
+  --color-blue-dark-i: #041929;
+  --color-blue-dark-ii: #052034;
+  --color-blue-hover: #00a0ff;
+  --color-green: #5fb749;
+  --color-orange: #e1922d;
+  --color-red: #b82a26;
+  --color-grey:rgba(255, 255, 255, 0.5);
+  --color-grey-icons: #808080;
+  --color-grey-info: rgba(0, 0, 0, 0.5);
+  --color-grey-border-button: rgba(0,0,0,0.3);
+  --color-gray-tag: rgba(14, 57, 90, 0.2);
+  --color-text-footer: #0e395a;
+  --color-label-footer: #b82a26;
+  --color-border-button-categories: rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='dark'] {
+  --color-black: #fff;
+  --color-white: #041929;
+  --color-white-hover: rgba(255,255,255, 0.1);
+  --color-white-navbar: #052034;
+  --color-blue: #052034;
+  --color-blue-i: #ffffff;
+  --color-blue-dark: #ffffff;
+  --color-blue-hover: #00a0ff;
+  --color-red: #b82a26;
+  --color-grey:rgba(255, 255, 255, 0.5);
+  --color-grey-icons: rgba(255, 255, 255, 0.3);
+  --color-grey-info: rgba(255, 255, 255, 0.5);
+  --color-grey-border-button: rgba(255,255,255,0.3);
+  --color-gray-tag: rgba(14, 57, 90, 0.2);
+  --color-text-footer: #052034;
+  --color-label-footer: #00a0ff;
+  --color-border-button-categories: rgba(255, 255, 255, 0.2);
+}
+
+// spacings
+$spacing-xxsmall: -2%;
+$spacing-xsmall: 8px;
+$spacing-small: 15px;
+$spacing-medium: 20px;
+$spacing-large: 30px;
+$spacing-xlarge: 80px;
+
+// font size
+$fs-xxxxxsmall:8px;
+
+// $fs-xxxxsmall: 8px;
+$fs-xxxxsmall: 12px;
+
+// $fs-xxxsmall: 12px;
+$fs-xxxsmall: 14px;
+
+$fs-xxsmall: 14px;
+$fs-xsmall: 16px;
+$fs-small: 18px;
+$fs-medium: 20px;
+$fs-large: 24px;
+$fs-ylarge: 28px;
+$fs-xlarge: 30px;
+$fs-xxlarge: 42px;
+$fs-wtf: 48px;
+
+// font family
+$ff-Nunito: 'Nunito Sans', sans-serif;
+
+// grid
+$grid-container: 1140px;
+$grid-container-small: $grid-container - 100px;
+$grid-gutter: 30px;
+
+// media queries
+$media-mobile: 576px;
+$media-tablet: 768px;
+$media-desktop: 992px;
+$media-container: $grid-container;
+$media-header-desktop: 1100px;

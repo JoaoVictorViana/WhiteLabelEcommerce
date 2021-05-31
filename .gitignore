@@ -42,3 +42,6 @@ wp-content/themes/whitelabelecommerce/dist/
 # Theme
 !wp-content/themes/whitelabelecommerce
 # Plugins
+!wp-content/plugins/WLEcommerce
+!wp-content/plugins/woocommerce
+wp-content/plugins/WLEcommerce/node_modules

@@ -1,0 +1,64 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@wordpress/babel-preset-default": "^4.18.1",
+    "@wordpress/blocks": "^6.22.0",
+    "@wordpress/element": "^2.17.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "2.20.0",
+    "husky": "^4.2.0",
+    "node-sass": "~4.13.1",
+    "npm-run-all": "4.1.5",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.1.2",
+    "sass": "^1.26.11",
+    "stylelint": "13.0.0",
+    "stylelint-config-recommended-scss": "4.1.0",
+    "stylelint-order": "4.0.0",
+    "stylelint-scss": "3.13.0"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-react-constant-elements": "^7.10.4",
+    "@wordpress/block-editor": "^5.0.0",
+    "@wordpress/block-library": "^2.25.0",
+    "autoprefixer": "^9.6.5",
+    "bootstrap": "^4.5.2",
+    "clsx": "^1.1.1",
+    "copy-to-clipboard": "^3.2.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jquery": "^3.6.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-modules": "^1.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^3.11.0",
+    "swiper": "^6.3.4"
+  },
+  "scripts": {
+    "build": "parcel build ./assets/* --public-url ./",
+    "dev": "parcel watch ./assets/* --public-url ./",
+    "lint": "run-s -cl lint:scripts lint:styles",
+    "lint-fix": "run-s -cl lint-fix:scripts lint-fix:styles",
+    "lint:scripts": "eslint --color --ext .js ./assets/**/*.js",
+    "lint:styles": "stylelint --color ./assets/**/*.scss",
+    "lint-fix:scripts": "eslint --color --fix ./assets/**",
+    "lint-fix:styles": "stylelint --color --fix ./assets/**"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@wordpress/default"
+    ]
+  }
+}
